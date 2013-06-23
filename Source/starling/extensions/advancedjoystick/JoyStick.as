@@ -45,8 +45,8 @@
 								 activateImmediately:Boolean = true)
 		{
 			super();
-			if( holderTexture == null && JoyStick["DEFAULT_HOLDER"] ) holderTexture = JoyStick["DEFAULT_HOLDER"];
-			if( stickTexture == null && JoyStick["DEFAULT_STICK"] ) stickTexture = JoyStick["DEFAULT_STICK"];
+//			if( holderTexture == null && JoyStick["DEFAULT_HOLDER"] ) holderTexture = JoyStick["DEFAULT_HOLDER"];
+//			if( stickTexture == null && JoyStick["DEFAULT_STICK"] ) stickTexture = JoyStick["DEFAULT_STICK"];
 			if( stickTexture == null || holderTexture == null ) 
 				throw new Error(errorMessage, 01);
 			
