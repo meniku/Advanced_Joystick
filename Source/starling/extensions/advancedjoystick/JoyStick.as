@@ -152,14 +152,15 @@
 				return;
 			}
 			var touch:Touch = touches[0];
+			var local:Point = globalToLocal(new Point(touch.globalX, touch.globalY));
 			_touched = true;
 			switch( touch.phase )
 			{
 				case TouchPhase.BEGAN:
-					pivotPoint.x = touch.globalX - pivotX + stick.x;
-					pivotPoint.y = touch.globalY - pivotY + stick.y;
+					pivotPoint.x = local.x - pivotX + stick.x;
+					pivotPoint.y = local.y - pivotY + stick.y;
 				case TouchPhase.MOVED:
-					moveJoystick(touch.globalX, touch.globalY);
+					moveJoystick(local.x, local.y);
 					break;
 				case TouchPhase.ENDED:
 					resetStick();
