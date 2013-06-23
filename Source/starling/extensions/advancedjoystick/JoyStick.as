@@ -16,10 +16,10 @@
 	{
 		
 		// PLEASE COMMENT OUT THESE VARIABLES AND EMBEDS IF YOU'RE NOT USING THE DEFAULT SKINS.
-		[Embed( source="skins/default_stick.png" )] private static const dsClassEmbed:Class;
-		public static const DEFAULT_STICK:Texture = Texture.fromBitmap( new dsClassEmbed() );
-		[Embed( source="skins/default_holder.png" )] private static const dhClassEmbed:Class;
-		public static const DEFAULT_HOLDER:Texture = Texture.fromBitmap( new dhClassEmbed() );
+//		[Embed( source="skins/default_stick.png" )] private static const dsClassEmbed:Class;
+//		public static const DEFAULT_STICK:Texture = Texture.fromBitmap( new dsClassEmbed() );
+//		[Embed( source="skins/default_holder.png" )] private static const dhClassEmbed:Class;
+//		public static const DEFAULT_HOLDER:Texture = Texture.fromBitmap( new dhClassEmbed() );
 		
 		// Velocities are given as normalized values (0-1).
 		private var _velocityX:Number = 0;
